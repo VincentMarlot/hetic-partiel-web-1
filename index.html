@@ -60,12 +60,16 @@
     <article>
       <p>Aenean sagittis tincidunt</p>
       <h3 class="heading">Posuere morbi scelerisque</h3>
-      <footer>
-        <ul class="nospace inline pushright">
-          <li><a class="btn" href="#">Ornare sem ultrices</a></li>
-          <li><a class="btn" href="#">Vestibulum porta</a></li>
-        </ul>
-      </footer>
+        <footer>
+          <ul class="nospace inline pushright">
+            <li>
+              <a class="btn" href="#">Ornare sem ultrices</a>
+            </li>
+            <li>
+              <a class="btn" href="#">Vestibulum porta</a>
+            </li>
+          </ul>
+        </footer>
     </article>
   </div>
 </div>
@@ -78,11 +82,11 @@
       <article class="group">
         <div class="one_half first">
           <h6 class="heading">Eu tincidunt eget viverra at ante donec mattis justo</h6>
-            <p>Hendrerit nisl et euismod quam semper eget vel viverra nibh phasellus accumsan mauris elit eget fringilla dolor aliquet id etiam interdum non eros sagittis hendrerit cras ac lectus ut arcu bibendum tincidunt eget id nisl ut.</p>
-            <p class="btmspace-30">Iaculis vehicula tristique ut gravida scelerisque mattis non erat a lectus tincidunt maximus aliquam sed ex quis nec maximus urna integer nec est sapien quisque pulvinar bibendum interdum donec a lacus diam cras sem ipsum finibus non volutpat nec&hellip;</p>
-            <footer><a class="btn" href="#">Read More &raquo;</a></footer>
-        </div>
-       <div class="one_half"><a class="imgover" href="#"><img src="images/demo/gallery/001.jpg" alt=""></a></div>
+              <p>Hendrerit nisl et euismod quam semper eget vel viverra nibh phasellus accumsan mauris elit eget fringilla dolor aliquet id etiam interdum non eros sagittis hendrerit cras ac lectus ut arcu bibendum tincidunt eget id nisl ut.</p>
+              <p class="btmspace-30">Iaculis vehicula tristique ut gravida scelerisque mattis non erat a lectus tincidunt maximus aliquam sed ex quis nec maximus urna integer nec est sapien quisque pulvinar bibendum interdum donec a lacus diam cras sem ipsum finibus non volutpat nec&hellip;</p>
+              <footer><a class="btn" href="#">Read More &raquo;</a></footer>
+          </div>
+        <div class="one_half"><a class="imgover" href="#"><img src="images/demo/gallery/001.jpg" alt=""></a></div>
       </article>
     <div class="clear"></div>
   </main>
@@ -342,6 +346,23 @@
     <p class="fl_right">Template by <a target="_blank" href="https://www.ta-cru-jallai-oublier-ou-koi.com/" title="Free Website Templates">Best templates</a></p>
   </div>
 </div>
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<i id="backtotop" class="fa fa-chevron-up"><img src="images/demo/gallery/arrow.svg" alt=""></i>
 </body>
+
+<script src="main.js" type="text/javascript">
+
+var scrollToTop = document.getElementById('backtotop');
+
+scrollToTop.addEventListener('click', function() {
+  console.log('OK');
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+});
+
+
+</script>
+
 </html>
