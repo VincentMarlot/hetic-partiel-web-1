@@ -3,6 +3,12 @@
 @import url("framework.css");
 /* Top Bar --------------------------------------------------------------------------------------------------------------- */
 
+.bgded {
+  +background: url('../../images/demo/backgrounds/001.jpg') no-repeat;
+  +background-size: cover;
+  +
+}
+
 #topbar {
   padding: 15px 0;
   font-size: .8rem;
@@ -388,7 +394,7 @@
   padding: 0;
 }
 
-/* Transition Fade This gives a smooth transition to "ALL" elements used in the layout - other than the navigation form used in mobile devices If you don't want it to fade all elements, you have to list the ones you want to be faded individually Delete it completely to stop fading --------------------------------------------------------------------------------------------------------------- */
+/* # Fade This gives a smooth transition to "ALL" elements used in the layout - other than the navigation form used in mobile devices If you don't want it to fade all elements, you have to list the ones you want to be faded individually Delete it completely to stop fading --------------------------------------------------------------------------------------------------------------- */
 
 *, *::before, *::after {
   transition: all .3s ease-in-out;
@@ -396,6 +402,10 @@
 
 #mainav form * {
   transition: none !important;
+}
+
+.link-ref ::before, .link-ref::after {
+  transition: all .3s ease-in-out;
 }
 
 /* ------------------------------------------------------------------------------------------------------------ */
